@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data = {
+            "FSD": [
+                { "topic": "node", "content": "HTTP module" },
+                { "topic": "Express", "content": "middleware" }
+            ]
+        }
+        function fun() {
+            document.getElementById('a').innerHTML = data.FSD[0].topic
+            document.getElementById('b').innerHTML = data.FSD[0].content
+            document.getElementById('c').innerHTML = data.FSD[1].topic
+            document.getElementById('d').innerHTML = data.FSD[1].content
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="fun()">click here</button>
+    <table border="2px solid black">
+        <tr>
+            <th>topic</th>
+            <th>content</th>
+        </tr>
+        <tr>
+            <th id="a"></th>
+            <th id="b"></th>
+        </tr>
+        <tr>
+            <th id="c"></th>
+            <th id="d"></th>
+        </tr>
+    </table>
+</body>
+
+</html>
