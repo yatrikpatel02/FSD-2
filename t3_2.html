@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const emp = [
+            {
+                "name": "pqr",
+                "age": 20
+            },
+            {
+                "name": "xyz",
+                "age": 15
+            },
+            {
+                "name": "mno",
+                "age": 18
+            }
+        ]
+        var emp1 = emp.sort((a, b) => b.age - a.age);
+        for (i of emp1) {
+            document.writeln(`student: ${i.name} ,${i.age} <br>`);
+        }
+        document.writeln(`minimum age student: ${emp1[emp1.length - 1].name},${emp1[emp1.length - 1].age}`)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
