@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var x = 2;
+        var y = 4;
+        setInterval(() => {
+            console.log("Next Calculations");
+        }, 2000);
+        setInterval(add, 2000);
+        function add() {
+            console.log(x + y)
+            x = x + 1;
+            y = y + 1;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Show calculations</h1>
+</body>
+
+</html>
