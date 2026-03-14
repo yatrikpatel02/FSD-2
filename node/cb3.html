@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="test" style="font-size: 50px;">LJU</p>
+    <button onclick="inc()">Increase Font</button>
+    <button onclick="dec()">Decrease Font</button>
+    <button onclick="stop()">stop Font</button>
+    <script>
+        var size = 50;
+        function temp(size) {
+            document.getElementById("test").style.fontSize = size + 'px';
+        }
+        function inc() {
+            i = setInterval(() => {
+                if (size < 150) { temp(++size) }
+            }, 100)
+        }
+        function dec() {
+            i = setInterval(() => {
+                if (size > 20) { temp(--size) }
+            }, 100)
+        }
+        function stop() {
+            clearInterval(i);
+        }
+    </script>
+</body>
+
+</html>
