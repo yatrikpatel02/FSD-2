@@ -1,0 +1,11 @@
+fs = require("fs")
+//fs.mkdirSync("fs")
+fs.writeFileSync("fs/my.txt", "B2 Students")
+fs.appendFileSync("fs/my.txt", "\n Node JS Tutorial")
+r = fs.readFileSync("fs/my.txt", "UTF-8")
+fs.copyFileSync("fs/my.txt", "fs/mynew.txt")        //directly copy the file
+//fs.writeFileSync("fs/mynew.txt", "B2 Students")
+//fs.appendFileSync("fs/mynew.txt", r)
+r1 = fs.readFileSync("fs/mynew.txt", "UTF-8")
+fs.unlinkSync("fs/my.txt")
+console.log(r1)
