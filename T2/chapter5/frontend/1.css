@@ -1,0 +1,9 @@
+#text {
+  font-family: "Courier New", Courier, monospace;
+  color: blue;
+  text-decoration: underline;
+}
+#img {
+  display: block;
+  margin: auto;
+}
