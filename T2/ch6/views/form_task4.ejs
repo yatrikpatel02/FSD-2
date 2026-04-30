@@ -1,0 +1,59 @@
+<table border="2px solid black">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Marks</th>
+        <th>Pass</th>
+    </tr>
+    <tr>
+        <th>
+            <%= obj[0].name %>
+        </th>
+        <th>
+            <%= obj[0].age %>
+        </th>
+        <th>
+            <%= obj[0].marks %>
+        </th>
+        <th>
+            <% if(obj[0].marks>40){ %> <h1 style="color: green;">Pass</h1>
+                <% } else{ %>
+                    <h1 style="color: red;">Fail</h1>
+                    <% } %>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <%= obj[1].name %>
+        </th>
+        <th>
+            <%= obj[1].age %>
+        </th>
+        <th>
+            <%= obj[1].marks %>
+        </th>
+        <th>
+            <% if(obj[1].marks>40){ %> <h1 style="color: green;">Pass</h1>
+                <% } else{ %>
+                    <h1 style="color: red;">Fail</h1>
+                    <% } %>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <%= obj[2].name %>
+        </th>
+        <th>
+            <%= obj[2].age %>
+        </th>
+        <th>
+            <%= obj[2].marks %>
+        </th>
+        <th>
+            <% if(obj[2].marks>40){ %> <h1 style="color: green;">Pass</h1>
+                <% } else{ %>
+                    <h1 style="color: red;">Fail</h1>
+                    <% } %>
+        </th>
+    </tr>
+</table>
